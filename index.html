@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Official Website</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,14 +23,14 @@
     <!-- <h1>Hello World</h1>
     <i class="fa-brands fa-square-facebook"></i> -->
 <header id="home">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 border-bottom fixed-top">
+    <nav  id="navbar"   class="navbar navbar-expand-lg navbar-light bg-white px-3 border-bottom fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand fs-2" href="#">Rin<span class="text-primary">kash</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center  nav nav-pills">
         <li class="nav-item">
           <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
         </li>
@@ -55,6 +60,9 @@
     </div>
   </div>
 </nav>
+
+<!-- data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0 -->
+
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -99,13 +107,15 @@
 </div>
 </header>
 
+
+<div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
 <section class="about my-5" id="about">
     <div class="container ">
         <div class="text-center">
-            <h1    data-aos="fade-up"  data-aos-offset="200 ">About<span class="text-primary"> me</span></h1>
+            <h1   id="about" data-aos="fade-up"  data-aos-offset="200 "  >About<span class="text-primary"> me</span></h1>
             <hr class=" w-25 m-auto">
         </div>
-
     <div class="row mt-2" >
         <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="zoom-in"  data-aos-offset="200 ">
 <h1 class="" >What do you<span class="text-primary"> want to know?</span></h1>
@@ -161,7 +171,7 @@
 <section class="services bg-light py-5" id="services">
     <div class="container">
         <div>
-            <h1 class="text-center my-5">Our<span class="text-primary"> Services</span></h1>
+            <h1 id="services"  class="text-center my-5">Our<span class="text-primary"> Services</span></h1>
             <hr class=" w-25 m-auto ">
         </div>
          <div class="row my-5" data-aos="zoom-in-up"  data-aos-offset="200 ">
@@ -232,10 +242,13 @@
     </div>
 </section>
 
+
+
+
 <section class="team my-5 text-center" id="team">
  <div class="container">
         <div class="text-center my-5"  >
-            <h1 >Our<span class="text-primary"> Team</span></h1>
+            <h1 id="team">Our<span class="text-primary"> Team</span></h1>
             <hr  / class=" w-25 m-auto ">
         </div>
         <div class="row my-5">
@@ -279,11 +292,10 @@
  </div>
 </section>
 
-
 <section class="contact py-5" id="contact">
     <div class="container">
         <div class="text-center my-5" >
-            <h1 >Feel free<span class="text-primary">  to Connect</span></h1>
+            <h1 id="contact" >Feel free<span class="text-primary">  to Connect</span></h1>
             <hr class=" w-25 m-auto ">
         </div>
 
@@ -342,6 +354,10 @@
         </div>
     </div>
 </section>
+
+
+</div>
+
            <div class="map-area mb-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60189.396719097625!2d72.73680880160045!3d19.46258059650725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa49b828c6a5%3A0xbefe4c41a14ad251!2sVirar%20West%2C%20Virar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1702926675703!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            </div>
@@ -402,5 +418,8 @@
 <script>
   AOS.init();
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+
 </body>
 </html>
